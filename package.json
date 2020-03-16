@@ -1,0 +1,30 @@
+{
+  "name": "test-chatbot",
+  "version": "1.0.0",
+  "description": "Test chatbot for intership at wunderman thompson commerce",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "tunnel": "ngrok http -region=eu 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmaoudmaijer/test-chatbot.git"
+  },
+  "author": "Emma Oudmaijer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmaoudmaijer/test-chatbot/issues"
+  },
+  "homepage": "https://github.com/emmaoudmaijer/test-chatbot#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dialogflow": "^1.2.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.17.1",
+    "forever": "^2.0.0",
+    "ngrok": "^3.2.7",
+    "nodemon": "^2.0.2"
+  }
+}
