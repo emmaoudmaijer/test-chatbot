@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "tunnel": "ngrok http -region=eu 3000"
+    "tunnel": "ngrok http -region=eu 8000"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/emmaoudmaijer/test-chatbot#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "dialogflow": "^1.2.0",
     "dialogflow-fulfillment": "^0.6.1",
