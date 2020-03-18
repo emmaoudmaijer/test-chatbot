@@ -1,13 +1,13 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 
-const app = express();
+const app = require('./app')
+const myApp = express().use(bodyParser.json());
 
-const port = 8000;
+myApp.get('/', (req,res) => {
+  res.send('the connection was succesful')
+})
 
-app.use(express.static(__dirname + '/public'));
+myApp.post('/', app)
 
-app.get("/", (req, res) => {
-	res.render('index.html');
-  });
-
-app.listen(port);
+myApp.listen(process.env.PORT || 8000);
