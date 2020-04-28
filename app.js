@@ -6,29 +6,29 @@ const app = dialogflow();
 //const b = require('public/scripts/index.js')
 //const data = dataOmzet();
 
-function dataOmzet() {
-	let result = fetch("pizzalist.json")
-		.then(data => data.json())
-		.then(json => {
-			const newResults = json.map(result => {
-				return {
-					pizza: result.pizzalist,
-					price: result.price,
-					img: result.img,
-					contact: result.description
-				}
-            })
+// function dataOmzet() {
+// 	let result = fetch("pizzalist.json")
+// 		.then(data => data.json())
+// 		.then(json => {
+// 			const newResults = json.map(result => {
+// 				return {
+// 					pizza: result.pizzalist,
+// 					price: result.price,
+// 					img: result.img,
+// 					contact: result.description
+// 				}
+//             })
         
-           data(newResults)
-        }) 
-}
+//            data(newResults)
+//         }) 
+// }
 
-dataOmzet()
-//var Data = require('data');
-//console.log(data)
-function data(results){
-console.log(results)
-}
+// dataOmzet()
+// //var Data = require('data');
+// //console.log(data)
+// function data(results){
+// console.log(results)
+// }
 
 app.intent('Default Welcome Intent', (conv) => {
     conv.ask("Hi! Welcome to this pizza restaurant, what would you like to order?")

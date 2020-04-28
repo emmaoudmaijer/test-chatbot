@@ -4,13 +4,13 @@ function dataOmzet() {
         console.log(result)
 }
 dataOmzet()
-console.log(result)
+//console.log(result)
 
 // module.export = data
 
 
 function dataOmzet() {
-	let result = fetch("pizzalist.json")
+	let result = fetch("../pizzalist.json")
 		.then(data => data.json())
 		.then(json => {
 			const newResults = json.map(result => {
