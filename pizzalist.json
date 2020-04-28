@@ -1,0 +1,80 @@
+[
+    {
+      "pizzalist": "Margherita",
+      "price": 11,
+      "img": "",
+      "description": "Pizza with cheese and tomato"
+    },
+    {
+      "pizzalist": "Diavola",
+      "price": 13,
+      "img": "",
+      "description": "pizza with tomato, mozzarella, salami, peppers"
+    },
+    {
+      "pizzalist": "Salami",
+      "price": 12,
+      "img": "",
+      "description": "Pizza with cheese, tomato and salami"
+    },
+    {
+      "pizzalist": "Burrata",
+      "price": 15,
+      "img": "",
+      "description": "Pizza with cheese, pesto and burrata"
+    },
+    {
+      "pizzalist": "Proscuito",
+      "price": 14,
+      "img": "",
+      "description": "Pizza with tomato, proscuito and mozzarella"
+    },
+    {
+      "pizzalist": "Salmon",
+      "price": 15,
+      "img": "",
+      "description": "Pizza with salmon and cheese"
+    },
+    {
+      "pizzalist": "Quattro salami",
+      "price": 14,
+      "img": "",
+      "description": "Pizza with spicy, normal, truffel and venkel salami"
+    },
+    {
+      "pizzalist": "Napoletana",
+      "price": 13,
+      "img": "",
+      "description": "Pizza with Tomato and  mozzarella"
+    },
+    {
+      "pizzalist": "Hawai",
+      "price": 13,
+      "img": "",
+      "description": "Pizza with pineapple"
+    },
+    {
+      "pizzalist": "Parma",
+      "price": 14,
+      "img": "",
+      "description": "Pizza with ham and tomato"
+    },
+    {
+      "pizzalist": "Bbq chicken",
+      "price": 14,
+      "img": "",
+      "description": "Pizza with bbq sauce and chicken"
+    },
+    {
+      "pizzalist": "Funghi",
+      "price": 13,
+      "img": "",
+      "description": "Pizza with mushrooms and olives"
+    },
+    {
+      "pizzalist": "Quattro formaggi",
+      "price": 13,
+      "img": "",
+      "description": "Pizza with 4 cheese"
+    }
+  ]

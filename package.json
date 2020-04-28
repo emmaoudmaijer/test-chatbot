@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "tunnel": "ngrok http -region=eu 8000"
+    "tunnel": "ngrok http 8000"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,6 @@
     "express": "^4.17.1",
     "firebase-functions": "^3.3.0",
     "forever": "^2.0.0",
-    "ngrok": "^3.2.7",
-    "nodemon": "^2.0.2"
+    "node-fetch": "^2.6.0"
   }
 }

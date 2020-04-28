@@ -63,3 +63,5 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   // intentMap.set('your intent name here', googleAssistantHandler);
   agent.handleRequest(intentMap);
 });
+
+exports.fulfillment = functions.https.onRequest(app);
