@@ -1,5 +1,16 @@
 function dataOmzet() {
 	let result = fetch("././pizzalist.json")
+        .then(data => data.json())
+        console.log(result)
+}
+dataOmzet()
+console.log(result)
+
+// module.export = data
+
+
+function dataOmzet() {
+	let result = fetch("pizzalist.json")
 		.then(data => data.json())
 		.then(json => {
 			const newResults = json.map(result => {
@@ -9,11 +20,15 @@ function dataOmzet() {
 					img: result.img,
 					contact: result.description
 				}
-			})
-            let data = newResults
-		})
+            })
+        
+           data(newResults)
+        }) 
 }
+
 dataOmzet()
-
-module.export = data
-
+//var Data = require('data');
+//console.log(data)
+function data(results){
+console.log(results)
+}
