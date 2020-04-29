@@ -1,15 +1,4 @@
 function dataOmzet() {
-	let result = fetch("././pizzalist.json")
-        .then(data => data.json())
-        console.log(result)
-}
-dataOmzet()
-//console.log(result)
-
-// module.export = data
-
-
-function dataOmzet() {
 	let result = fetch("../pizzalist.json")
 		.then(data => data.json())
 		.then(json => {
