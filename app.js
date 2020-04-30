@@ -36,6 +36,9 @@ app.intent('Default Welcome Intent', (conv) => {
 
 app.intent('list', (conv) => {
     conv.ask("We have this pizza's available")
+
+    console.log(results)
+
     //agent.add(new Card({
         //           title: 'Title: this is a card title',
         //           imageUrl: 'https://developers.google.com/actions/assistant.png',
