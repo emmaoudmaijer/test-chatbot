@@ -1,5 +1,5 @@
 const {
-    dialogflow
+    dialogflow, BasicCard
 } = require('actions-on-google');
 const fetch = require("node-fetch"); 
 const app = dialogflow();
@@ -36,8 +36,13 @@ app.intent('Default Welcome Intent', (conv) => {
 
 app.intent('list', (conv) => {
     conv.ask("We have this pizza's available")
-
-    console.log(results)
+    conv.add(new BasicCard({
+        title:  "hello1",
+        subtitle:  "hello2",
+        image:  "hello3",
+        text: "hello4"
+    }));
+    //console.log(results)
 
     //agent.add(new Card({
         //           title: 'Title: this is a card title',
