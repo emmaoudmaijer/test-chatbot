@@ -22,8 +22,10 @@ fetch("../pizzalist.json")
     return resp.json();
     })
     .then(function(data) {
-    console.log(data)
-    });
+	console.log(data)
+	return data
+	});
+	console.log(data)
 // function dataOmzet() {s
 // 	let result = fetch("../pizzalist.json")
 // 	let newResults = [];
