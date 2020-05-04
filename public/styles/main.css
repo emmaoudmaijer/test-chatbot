@@ -496,6 +496,8 @@ float: right;
 			position: relative;
 			border-radius: 0.5em;
 			display: block;
+			width: 20%;
+		height: 20%;
 		}
 
 		.image.left {

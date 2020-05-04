@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 // function dataOmzet() {
 // 	let result = fetch("../pizzalist.json")
 // //	let result = fetch("/pizzalist.json")
@@ -16,16 +16,17 @@
 //            data(newResults)
 //         }) 
 // // }	
-
+let newResults = [];
 fetch("../pizzalist.json")
     .then(function(resp){
     return resp.json();
     })
     .then(function(data) {
 	console.log(data)
-	return data
+	newResults = data
 	});
-	console.log(data)
+	console.log(newResults);
+	//console.log(data);
 // function dataOmzet() {s
 // 	let result = fetch("../pizzalist.json")
 // 	let newResults = [];
