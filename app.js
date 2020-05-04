@@ -1,42 +1,62 @@
 
 const {
-    dialogflow, List, BasicCard, Image, Button
+    dialogflow, List, SimpleResponse, BasicCard, Image, Button,
 } = require('actions-on-google');
 // Import the appropriate class
-
 const { WebhookClient } = require('dialogflow-fulfillment');
  //Create an instance
 //const agent = new WebhookClient({request: request, response: response});
 const { Text, Card, Suggestion, Payload } = require('dialogflow-fulfillment');
+// const { 
+//     BasicCard,
+//     actionsOnGoogle} = require('actions-on-google');
 
 const fetch = require("node-fetch"); 
 const app = dialogflow();
 
 
+//import { SimpleResponse } from `actions-on-google`
+//----- AB test
+const experimentId = "-e8f2ocGS8O0G2MJU-kzYg";
+let variationId =  Math.floor((Math.random() * 2))
+//let variationId = Math.floor.(Math.random()*2); //0-2
+
+// //DATA OPHALEN
+// let result = fetch("pizzalist.json")
+// //	let result = fetch("/pizzalist.json")
+// 		.then(data => data.json())
+// 		.then(json => {
+// 			const newResults = json.map(result => {
+// 				return {
+// 					pizza: result.pizzalist,
+// 					price: result.price,
+// 					img: result.img,
+// 					contact: result.description
+// 				}
+//             })
+//             console.log(newResults)
+//         }) 
+
+
 app.intent('Default Welcome Intent', (conv) => {
     conv.ask("Hi! Welcome to this pizza restaurant, what would you like to order?")
+    console.log(experimentId);
+    console.log(variationId);
 })
 
 app.intent('list', (conv) => {
     //agent.add("text")
-      conv.ask("We have this pizza's available:");
-    //  conv.writeln("hallo");
-    // //  conv.ask("another list:")
-    //  conv.ask(new BasicCard({
-    //     text: `This is a basic card.  Text in a basic card can include "quotes" and
-    //     most other unicode characters including emojis.  Basic cards also support
-    //     some markdown formatting like *emphasis* or _italics_, **strong** or
-    //     __bold__, and ***bold itallic*** or ___strong emphasis___ as well as other
-    //     things like line  \nbreaks`, // Note the two spaces before '\n' required for
-    //                                  // a line break to be rendered in the card.
-    //     subtitle: 'This is a subtitle',
-    //     title: 'Title: this is a title',
-    //     buttons: new Button({
-    //       title: 'This is a button',
-    //       url: 'https://assistant.google.com/',
-    //     })
-
-    }) 
+      conv.ask("Here is a list with all the pizza's we have available:");
+      conv.ask(new BasicCard({
+        text: "Some text",
+        title: "Some title",
+          image: new Image({
+            url: "some_image_url",
+            alt: "Some alternative text",
+          }),
+      }));
+     // console.log(data)
+})
     //  conv.add(new BasicCard({
     //     title: "he1",
     //     subtitle: "h",

@@ -1,3 +1,6 @@
+'use strict';
+
+const {WebhookClient} = require('dialogflow-fulfillment');
 const express = require('express')
 const bodyParser = require('body-parser')
 
@@ -12,13 +15,27 @@ myApp.use(express.static(__dirname + '/public'));
 //const getBot = require('./index.bot');
 //const { getStore, postStore, getStoreGroup } = require('./index.store');
 //const getLog = require('./index.log');
+function WebhookProcessing(req, res) {
+  const agent = new WebhookClient({request: req, response: res});
 
+  console.log('Dialogflow Request headers: ' + JSON.stringify(req.headers));
+  console.log('Dialogflow Request body: ' + JSON.stringify(req.body));
+
+  console.log(JSON.stringify(req.body.queryResult.queryText));
+  console.log(JSON.stringify(req.body.queryResult.fulfillmentText));
+
+}
+myApp.use(bodyParser.json());
+myApp.use(bodyParser.urlencoded({extended: true}));
 
 myApp.get('/', (req,res) => {
   //res.send('the connection was succesful')
   res.render('index.html');
 })
 
+myApp.post('/fulfillment', function (req, res) {
+  WebhookProcessing(req, res);
+});
 
 // myApp.get('/public/*', (req, res) => {
 // 	const requestUrl = req.url.substring(1);
