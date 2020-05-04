@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <script>
+        function loadBot(){
+            document.getElementById("Pizzabot").innerHTML = '<object type="type/html"  data="https://console.dialogflow.com/api-client/demo/embedded/6d7f8262-4845-47c2-80af-c7f55b5b9bed"></object>';
+        }
+    </script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164794708-1"></script>
 <script>
@@ -10,16 +15,90 @@
 
     gtag('config', 'UA-164794708-1', { 'optimize_id': 'GTM-P5JTVF2'});
 </script>
-
+    <link rel="stylesheet" href="styles/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Order your pizza!</h1>
- <iframe title="Pizzabot" allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/6d7f8262-4845-47c2-80af-c7f55b5b9bed"></iframe> 
+    <header id="header" class="alt skel-layers-fixed">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script type="text/javascript" src="./pizzalist.json"></script>
+<!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h2>Order your pizza</h2>
+            <p>You can check the menu with all of our pizza's</p>
+            <ul class="actions">
+                <li><a href="#" class="button big scrolly">See menu</a></li>
+            </ul>
+		</div>
+	</section>
+<a  href="#hide" id="openchatbot" class="openchatbot">
+<img  alt="open chatbot" class="logopizza" src="images/pizza1.png">
+</a>
+<div id="Pizzabot">
+<iframe id="hide" title="Pizzabot" allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/6d7f8262-4845-47c2-80af-c7f55b5b9bed"></iframe> 
+</div>
+  
+
+<!-- ONE -->
+    <section id="three" class="wrapper style1">
+        <div class="container">
+            <header class="major">
+                <h2>INFORMATION</h2>
+                <p>You can find the information that you need here</p>
+			</header>
+			<div class="4u$ 6u(2) 12u$(3)">
+				<article class="box post">
+					<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+					<h3>Menu</h3>
+					<p>If you want to check our menu, you can find that here</p>
+					<ul class="actions">
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul>
+				</article>
+			</div>
+            <div class="row">
+                <div class="4u 6u(2) 12u$(3)">
+                    <article class="box post">
+                        <a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+                        <h3>About us</h3>
+                        <p>If you want to know more about our company, you can find it here</p>
+                        <ul class="actions">
+                            <li><a href="#" class="button">Learn More</a></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="4u 6u$(2) 12u$(3)">
+                    <article class="box post">
+                        <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                        <h3>Contact</h3>
+                        <p>Feel free to contact us!</p>
+                        <ul class="actions">
+                            <li><a href="#" class="button">Learn More</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer id="footer">
+        <span class="copyright">
+            &copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk">Responsive Web Templates</a>
+        </span>
+    </footer>
 <script type="text/javascript" src="scripts/index.js"></script>
 
 </body>

@@ -25,7 +25,7 @@
     "dialogflow": "^1.2.0",
     "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.17.1",
-    "firebase-functions": "^3.3.0",
+    "firebase-functions": "^3.6.1",
     "forever": "^2.0.0",
     "node-fetch": "^2.6.0"
   }

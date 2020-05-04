@@ -2,7 +2,9 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const app = require('./app')
+
 const myApp = express().use(bodyParser.json());
+myApp.use(express.static(__dirname + '/public'));
 //const fs = require('fs');
 //const http = require('http');
 ///const util = require('util');
@@ -13,7 +15,8 @@ const myApp = express().use(bodyParser.json());
 
 
 myApp.get('/', (req,res) => {
-  res.send('the connection was succesful')
+  //res.send('the connection was succesful')
+  res.render('index.html');
 })
 
 
