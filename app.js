@@ -13,7 +13,12 @@ const { Text, Card, Suggestion, Payload } = require('dialogflow-fulfillment');
 
 const fetch = require("node-fetch"); 
 const app = dialogflow();
+let newResults = require('./pizzalist.json');
+newResults.forEach(function(item,index){
+    console.log(item.pizzalist)
+})
 
+//console.log(newResults[0].pizzalist)
 // fetch("pizzalist.json")
 //     .then(function(resp){
 //     return resp.json();
@@ -32,6 +37,7 @@ const app = dialogflow();
 //----- AB test
 const experimentId = "-e8f2ocGS8O0G2MJU-kzYg";
 let variationId =  Math.floor((Math.random() * 2))
+// console.log(variationId)
 //let variationId = Math.floor.(Math.random()*2); //0-2
 
 // //DATA OPHALEN
@@ -59,15 +65,20 @@ app.intent('Default Welcome Intent', (conv) => {
 
 app.intent('list', (conv) => {
     //agent.add("text")
-      conv.ask("Here is a list with all the pizza's we have available:");
-      conv.ask(new BasicCard({
-        text: "Some text",
-        title: "Some title",
-          image: new Image({
-            url: "some_image_url",
-            alt: "Some alternative text",
-          }),
-      }));
+    console.log(variationId)
+    conv.ask("Here is a list with all the pizza's we have available:");
+    newResults.forEach(function(item,index){
+    //    conv.ask('-'+ item.pizzalist)
+    conv.ask(new BasicCard({
+            text: item.pizzalist,
+            title: item.description,
+            price: item.price,
+            image: new Image({
+                url: "some_image_url",
+                alt: "Some alternative text",
+            }),
+         }));
+    })
      // console.log(data)
 })
     //  conv.add(new BasicCard({

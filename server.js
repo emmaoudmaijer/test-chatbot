@@ -11,7 +11,6 @@ myApp.use(express.static(__dirname + '/public'));
 //const fs = require('fs');
 //const http = require('http');
 ///const util = require('util');
-
 //const getBot = require('./index.bot');
 //const { getStore, postStore, getStoreGroup } = require('./index.store');
 //const getLog = require('./index.log');

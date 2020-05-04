@@ -12,20 +12,21 @@
 // 					contact: result.description
 // 				}
 //             })
-        
+        console.log(experimentId)
 //            data(newResults)
 //         }) 
 // // }	
-let newResults = [];
-fetch("../pizzalist.json")
-    .then(function(resp){
-    return resp.json();
-    })
-    .then(function(data) {
-	console.log(data)
-	newResults = data
-	});
-	console.log(newResults);
+//let newResults = require('../../pizzalist.json');
+
+// fetch("../pizzalist.json")
+//     .then(function(resp){
+//     return resp.json();
+//     })
+//     .then(function(data) {
+// 	console.log(data)
+// 	newResults = data
+// 	});
+// 	console.log(newResults);
 	//console.log(data);
 // function dataOmzet() {s
 // 	let result = fetch("../pizzalist.json")
