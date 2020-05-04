@@ -1,3 +1,10 @@
+//----- AB test
+const experimentId = "-e8f2ocGS8O0G2MJU-kzYg";
+let variationId = Math.floor(Math.random()); //0-1
+//let variationId = Math.floor.(Math.random()*2); //0-2
+console.log(experimentId);
+console.log(variationId);
+
 const functions = require('firebase-functions');
 
 const {WebhookClient, Card, Suggestion} = require('dialogflow-fulfillment');
@@ -10,6 +17,9 @@ const app = dialogflow();
 
 app.intent('Default Welcome Intent', (conv) => {
     conv.ask("Hi! Welcome to this pizza restaurant, what would you like to order?")
+    console.log('hello')
+    console.log(experimentId);
+    console.log(variationId);
 })
 
 app.intent('list', (conv) => {

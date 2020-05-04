@@ -1,9 +1,9 @@
 #Pizzabot {
     float: right;
 }
-
+/* 
 #hide { opacity: 0; }
-#hide:target {opacity: 1;}
+#hide:target {opacity: 1;} */
 
 .logopizza {
 width: 4em;
@@ -1245,7 +1245,7 @@ float: right;
 	#banner {
 		background-attachment: scroll,						fixed;
 		background-color: #494d53;
-		background-image: url("images/overlay.png"), url("../images/banner.jpg");
+		/* background-image: url("images/overlay.png"), url("../images/banner.jpg"); */
 		background-position: top left,					center center;
 		background-repeat: repeat,						no-repeat;
 		background-size: auto,						cover;
