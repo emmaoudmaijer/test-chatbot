@@ -14,7 +14,20 @@ const { Text, Card, Suggestion, Payload } = require('dialogflow-fulfillment');
 const fetch = require("node-fetch"); 
 const app = dialogflow();
 
+// fetch("pizzalist.json")
+//     .then(function(resp){
+//     return resp.json();
+//     })
+//     .then(function(data) {
+//     console.log(data)
+//     });
 
+    // fetch('./pizzalist.json')
+    // .then(res => res.json())
+    // .then(data => {
+    //   console.log(data)
+    // })
+    // .catch(err => console.error(err));
 //import { SimpleResponse } from `actions-on-google`
 //----- AB test
 const experimentId = "-e8f2ocGS8O0G2MJU-kzYg";

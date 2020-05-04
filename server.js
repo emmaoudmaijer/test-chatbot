@@ -33,6 +33,11 @@ myApp.get('/', (req,res) => {
   res.render('index.html');
 })
 
+// myApp.get('/pizzalist', (req,res) => {
+//   //res.send('the connection was succesful')
+//   res.render('pizzalist.json');
+// })
+
 myApp.post('/fulfillment', function (req, res) {
   WebhookProcessing(req, res);
 });
