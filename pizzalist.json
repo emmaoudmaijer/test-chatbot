@@ -2,79 +2,79 @@
     {
       "pizzalist": "Margherita",
       "price": 11,
-      "img": "",
+      "img": "https://www.parliamoitaliano.nl/wp-content/uploads/Pizza-en-pasta_Pizza_Margherita-e1481054381295-713x330.jpg",
       "description": "Pizza with cheese and tomato"
     },
     {
       "pizzalist": "Diavola",
       "price": 13,
-      "img": "",
+      "img": "https://pitafalesti.files.wordpress.com/2016/01/pita-la-diavola.jpg",
       "description": "pizza with tomato, mozzarella, salami, peppers"
     },
     {
       "pizzalist": "Salami",
       "price": 12,
-      "img": "",
+      "img": "https://www.koopmans.com/assets/_processed_/2/3/csm_Pizza_Italiano_van_Danna_03a284adba.png",
       "description": "Pizza with cheese, tomato and salami"
     },
     {
       "pizzalist": "Burrata",
       "price": 15,
-      "img": "",
+      "img": "https://kookidee.nl/wp-content/uploads/2018/11/pizza-bianca-prosciutto-crudo-burrata-rucola.jpg",
       "description": "Pizza with cheese, pesto and burrata"
     },
     {
       "pizzalist": "Proscuito",
       "price": 14,
-      "img": "",
+      "img": "https://kookidee.nl/wp-content/uploads/2018/06/pizza-bianca-prosciutto-crudo-champignons-mozzarella-rucola.jpg",
       "description": "Pizza with tomato, proscuito and mozzarella"
     },
     {
       "pizzalist": "Salmon",
       "price": 15,
-      "img": "",
+      "img": "https://www.thespruceeats.com/thmb/TiTCuOFb8lj9XdNa0VR7FzCEcz4=/2500x2500/smart/filters:no_upscale()/Salmon-Pizza-58ade2255f9b58a3c9d4dc8f.jpg",
       "description": "Pizza with salmon and cheese"
     },
     {
       "pizzalist": "Quattro salami",
       "price": 14,
-      "img": "",
+      "img": "https://media-cdn.tripadvisor.com/media/photo-s/12/d1/51/c2/pizza-quattro-formaggi.jpg",
       "description": "Pizza with spicy, normal, truffel and venkel salami"
     },
     {
       "pizzalist": "Napoletana",
       "price": 13,
-      "img": "",
+      "img": "https://cdn.tasteatlas.com/images/social/bb08c3eaff3c422b8475ab7c4408301d.jpg",
       "description": "Pizza with Tomato and  mozzarella"
     },
     {
-      "pizzalist": "Hawai",
+      "pizzalist": "Hawaii",
       "price": 13,
-      "img": "",
+      "img": "https://www.100pmagazine.nl/wp-content/uploads/2019/03/pizzaananas-722x391.jpg",
       "description": "Pizza with pineapple"
     },
     {
       "pizzalist": "Parma",
       "price": 14,
-      "img": "",
+      "img": "https://media-cdn.tripadvisor.com/media/photo-s/14/7c/69/3e/pizza-parma-pizza-della.jpg",
       "description": "Pizza with ham and tomato"
     },
     {
       "pizzalist": "Bbq chicken",
       "price": 14,
-      "img": "",
+      "img": "https://www.slapyodaddybbq.com/wp-content/uploads/BBQChickenPizza-foodgawker.jpg",
       "description": "Pizza with bbq sauce and chicken"
     },
     {
       "pizzalist": "Funghi",
       "price": 13,
-      "img": "",
+      "img": "https://ohmydish.nl/wp-content/uploads/2017/06/Pizza-funghi.jpg",
       "description": "Pizza with mushrooms and olives"
     },
     {
       "pizzalist": "Quattro formaggi",
       "price": 13,
-      "img": "",
+      "img": "https://www.budgetkoken.be/img/foto/pizza-quattro-formaggi.jpg",
       "description": "Pizza with 4 cheese"
     }
   ]
