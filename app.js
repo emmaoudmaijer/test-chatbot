@@ -25,7 +25,7 @@ app.intent('Default Welcome Intent', (conv) => {
 
 app.intent('list', (conv) => {
     console.log(variationId)
-    conv.ask("Here is a list with all the pizza's we have available:");
+    conv.ask("Here is a list with all all the pizza's we have available:");
     newResults.forEach(function(item,index){
     conv.ask(new BasicCard({
             title: item.pizzalist,
