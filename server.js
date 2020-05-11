@@ -56,7 +56,7 @@ app.intent('Default Welcome Intent', (conv) => {
 })
 
 app.intent('list', (conv) => {
-    console.log(vari)
+    console.log('intent'+ vari)
     if (vari == 1 ) {
     conv.ask("Here is a list with all all the pizza's we have available:");
     newResults.forEach(function(item,index){
