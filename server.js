@@ -5,23 +5,34 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const myApp = express().use(bodyParser.json());
+//myApp.use("/styles",  express.static('styles/main.css'));
+//myApp.set('/', __dirname + '/')
 var vari = 0;
-
+//myApp.use(express.static(__dirname));
+//app.use(express.bodyParser());
+//myApp.use(express.static('/'))
+//myApp.use(express.static(__dirname + '/'));
+//myApp.use(myApp.router);
 myApp.get('/',(req,res)=>{
-  
-  res.sendFile(__dirname + '/public/' + "index.html");//here you are passing the array and the renderer will do the job
+  res.sendFile(__dirname + '/' + "index.html");//here you are passing the array and the renderer will do the job
   vari = req.query.vari;
   console.log('server-js: '+vari);
   })
 
-myApp.use(express.static(__dirname + '/public'));
- 
+  myApp.get('/styles/main.css', function(req, res) {
+    res.sendFile(__dirname + "/styles/" + "main.css");
+  });
+  myApp.get('/scripts/index.js', function(req, res) {
+    res.sendFile(__dirname + "/scripts/" + "index.js");
+  });
+// res.render("index.html");//here you are passing the array and the renderer will do the job
+// vari = req.query.vari;
+// console.log('server-js: '+vari);
+
 function WebhookProcessing(req, res) {
   const agent = new WebhookClient({request: req, response: res});
-
   console.log('Dialogflow Request headers: ' + JSON.stringify(req.headers));
   console.log('Dialogflow Request body: ' + JSON.stringify(req.body));
-
   console.log(JSON.stringify(req.body.queryResult.queryText));
   console.log(JSON.stringify(req.body.queryResult.fulfillmentText));
 

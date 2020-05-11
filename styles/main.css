@@ -1,21 +1,6 @@
 
-.logopizza {
-width: 4em;
-height: 4em;
-float: right;
-/* position: fixed; */
-}
-
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Lato:300,700");
-
-/*
-	Drift by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
-*/
-
-/* Basic */
 
 	body {
 		background: #fff;
