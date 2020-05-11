@@ -1,5 +1,5 @@
 
-let experimentId = -e8f2ocGS8O0G2MJU-kzYg;
+let experimentId = "-e8f2ocGS8O0G2MJU-kzYg";
 function getQueryVariable(variable){
     //get variables from the url
     var query = window.location.search.substring(1);
