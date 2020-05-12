@@ -1,8 +1,10 @@
 //------------------------------ SERVER SIDE EXPRESS SERVER ---------------------------------------------
+require('dotenv').config()
 
 const {WebhookClient} = require('dialogflow-fulfillment');
 const express = require('express')
 const bodyParser = require('body-parser')
+
 
 const myApp = express()
 //.use(bodyParser.json());
