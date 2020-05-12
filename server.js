@@ -100,6 +100,8 @@ app.intent('list', (conv) => {
                       url: '#',
                     }),
                }));
+              })
+            }})
         //conv.ask("We have:" + pizzalist);
         //console.log(variationId)
         // newResults.forEach(function(item,index){
