@@ -15,7 +15,7 @@ var vari = 0;
 //myApp.use(express.static(__dirname + '/'));
 //myApp.use(myApp.router);
 myApp.get('/',(req,res)=>{
-  res.sendFile(__dirname + "index.html");//here you are passing the array and the renderer will do the job
+  res.sendFile(__dirname + '/' + "index.html");//here you are passing the array and the renderer will do the job
   vari = req.query.vari;
   console.log(req.query)
   console.log('server-js: '+vari);
@@ -87,8 +87,8 @@ app.intent('list', (conv) => {
               }),
          }));
     })} else {
-        conv.ask("We have many pizza's on our menu!");
-        conv.ask("Let me know if you see one who you like and would like to order :)");
+        conv.ask("We have different pizza's on our menu!");
+        conv.ask("Let me know if you see one who you like and would like to order");
         //console.log(variationId)
        // newResults.forEach(function(item,index){
             // conv.ask(new List({
