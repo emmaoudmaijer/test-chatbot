@@ -92,18 +92,15 @@ app.intent('list', (conv) => {
         conv.ask("We have different pizza's on our menu!");
         conv.ask("Let me know if you see one who you like and would like to order");
         //console.log(variationId)
-       // newResults.forEach(function(item,index){
-            // conv.ask(new List({
-            //     items: {
-            //         title:  item.pizzalist,
-            //         text: item.description,
-            //       },
-            //     //   [SELECTION_KEY_TWO]: {
-            //     //     title: 'Number two',
-            //     //     synonyms: ['synonym of KEY_TWO 1', 'synonym of KEY_TWO 2'],
-            //     //   }    
-            //   }))
-          //  })
+       function list (item,index){
+            conv.ask(new List({
+                items: {
+                    title:  item.pizzalist,
+                    text: item.description,
+                  },
+              }))
+           }
+           list()
     }
     })
 
