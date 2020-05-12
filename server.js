@@ -93,7 +93,7 @@ app.intent('list', (conv) => {
         conv.ask("Let me know if you see one who you like and would like to order");
         //console.log(variationId)
         newResults.forEach(function(item,index){
-            conv.ask(new List({
+            conv.ask(new BasicCard({
                 items: {
                     title:  item.pizzalist,
                     text: item.description,
@@ -103,7 +103,7 @@ app.intent('list', (conv) => {
                     url: '#',
                   }),
               }))
-           })   
+         })   
     }
     })
 
