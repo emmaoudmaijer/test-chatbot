@@ -26,6 +26,9 @@ myApp.get('/',(req,res)=>{
   myApp.get('/styles/main.css', function(req, res) {
     res.sendFile(__dirname + "/styles/" + "main.css");
   });
+  myApp.get('/images/', function(req, res) {
+    res.sendFile(__dirname + "/images/" + "pizza.jpg");
+  });
   myApp.get('/scripts/index.js', function(req, res) {
     res.sendFile(__dirname + "/scripts/" + "index.js");
   });

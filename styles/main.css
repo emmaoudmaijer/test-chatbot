@@ -1047,7 +1047,8 @@
 	@keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 
 	#header {
-		background-color: #fff;
+		/* background-color: #fff; */
+		background-image: url(/images/pizza.png);
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 		color: inherit;
 		cursor: default;
@@ -1226,12 +1227,12 @@
 
 	#banner {
 		background-attachment: scroll,						fixed;
-		background-color: #494d53;
-		/* background-image: url("images/overlay.png"), url("../images/banner.jpg"); */
+		background-color: black;
+		background-image: url("https://smakelijk.nl/wp-content/uploads/2018/08/pazzi-breda-4.jpg");
 		background-position: top left,					center center;
-		background-repeat: repeat,						no-repeat;
-		background-size: auto,						cover;
-		color: #d1d2d4;
+		background-repeat: no-repeat,						no-repeat;
+		background-size: cover;
+		color: darkslategrey;
 		padding: 16em 0;
 		position: relative;
 		text-align: center;
@@ -1259,7 +1260,7 @@
 		}
 
 		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
-			color: #ffffff;
+			color: black;
 		}
 
 		#banner .inner {
@@ -1268,8 +1269,8 @@
 		}
 
 		#banner .button {
-			border-color: white !important;
-			color: #ffffff !important;
+			border-color: BLACK !important;
+			color: black !important;
 		}
 
 			#banner .button:hover {
