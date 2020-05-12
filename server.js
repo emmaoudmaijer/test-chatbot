@@ -91,10 +91,10 @@ app.intent('list', (conv) => {
     })} else {
         conv.ask("We have different pizza's on our menu!");
         conv.ask("Let me know if you see one who you like and would like to order");
-        newResults.forEach(function(item,index){
+        newResults.forEach(function(item2,index){
           conv.ask(new BasicCard({
-                  title: item.pizzalist,
-                  text: item.description,
+                  title: item2.pizzalist,
+                  text: item2.description,
                   buttons: new Button({
                       title: 'Order',
                       url: '#',
@@ -102,20 +102,7 @@ app.intent('list', (conv) => {
                }));
               })
             }})
-        //conv.ask("We have:" + pizzalist);
-        //console.log(variationId)
-        // newResults.forEach(function(item,index){
-        //     conv.ask(new BasicCard({
-        //         items: {
-        //             title:  item.pizzalist,
-        //             text: item.description,
-        //           },
-        //           buttons: new Button({
-        //             title: 'ORDER',
-        //             url: '#',
-        //           }),
-        //       }))
-        //  })   
+       
 
 // Handle the Dialogflow follow-up intents
 app.intent(['list - custom', 'list - custom'], (conv) => {
