@@ -85,7 +85,7 @@ app.intent('list', (conv) => {
             }),
             buttons: new Button({
                 title: 'Order',
-                url: 'https://assistant.google.com/',
+                url: '#',
               }),
          }));
     })} else {
