@@ -91,7 +91,7 @@ app.intent('list', (conv) => {
     })} else {
         conv.ask("We have different pizza's on our menu!");
         conv.ask("Let me know if you see one who you like and would like to order");
-        conv.ask("We have:" + pizzalist);
+        //conv.ask("We have:" + pizzalist);
         //console.log(variationId)
         // newResults.forEach(function(item,index){
         //     conv.ask(new BasicCard({
@@ -110,7 +110,7 @@ app.intent('list', (conv) => {
 
 // Handle the Dialogflow follow-up intents
 app.intent(['list - custom', 'list - custom'], (conv) => {
-  conv.ask('Great! you ordered a pizza:' + pizzalist + price);
+  conv.ask('Great! you ordered a pizza:');
   // If the user is using a screened device, display the carousel
   //if (conv.screen) return conv.ask(fakeColorCarousel());
  });
