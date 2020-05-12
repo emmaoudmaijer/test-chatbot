@@ -15,7 +15,7 @@ var vari = 0;
 //myApp.use(express.static(__dirname + '/'));
 //myApp.use(myApp.router);
 myApp.get('/',(req,res)=>{
-  res.sendFile(__dirname + '/' + "index.html");//here you are passing the array and the renderer will do the job
+  res.sendFile(__dirname + "index.html");//here you are passing the array and the renderer will do the job
   vari = req.query.vari;
   console.log(req.query)
   console.log('server-js: '+vari);
