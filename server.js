@@ -114,7 +114,6 @@ app.intent('list', (conv) => {
         //           }),
         //       }))
         //  })   
-    }
 
 // Handle the Dialogflow follow-up intents
 app.intent(['list - custom', 'list - custom'], (conv) => {
