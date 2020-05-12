@@ -91,19 +91,20 @@ app.intent('list', (conv) => {
     })} else {
         conv.ask("We have different pizza's on our menu!");
         conv.ask("Let me know if you see one who you like and would like to order");
+        conv.ask("We have:" + pizzalist);
         //console.log(variationId)
-        newResults.forEach(function(item,index){
-            conv.ask(new BasicCard({
-                items: {
-                    title:  item.pizzalist,
-                    text: item.description,
-                  },
-                  buttons: new Button({
-                    title: 'ORDER',
-                    url: '#',
-                  }),
-              }))
-         })   
+        // newResults.forEach(function(item,index){
+        //     conv.ask(new BasicCard({
+        //         items: {
+        //             title:  item.pizzalist,
+        //             text: item.description,
+        //           },
+        //           buttons: new Button({
+        //             title: 'ORDER',
+        //             url: '#',
+        //           }),
+        //       }))
+        //  })   
     }
     })
 
