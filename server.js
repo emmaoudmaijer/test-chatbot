@@ -92,15 +92,18 @@ app.intent('list', (conv) => {
         conv.ask("We have different pizza's on our menu!");
         conv.ask("Let me know if you see one who you like and would like to order");
         //console.log(variationId)
-       function list (item,index){
+        newResults.forEach(function(item,index){
             conv.ask(new List({
                 items: {
                     title:  item.pizzalist,
                     text: item.description,
                   },
+                  buttons: new Button({
+                    title: 'ORDER',
+                    url: '#',
+                  }),
               }))
-           }
-           list()
+           })   
     }
     })
 
