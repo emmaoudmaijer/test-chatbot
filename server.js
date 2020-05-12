@@ -107,5 +107,5 @@ app.intent('list', (conv) => {
     }
     })
 
-myApp.post('/', app)
+myApp.post('/', myApp)
 myApp.listen(process.env.PORT || 8000);
