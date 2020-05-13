@@ -103,11 +103,11 @@ app.intent('list', (conv) => {
           conv.ask(new BasicCard({
              title: item.pizzalist,
              text: item.description,
-            // price: item.price,
-            //  image: new Image({
-            //      url: item.img,
-            //      alt: "pizza's",
-            //  }),
+            price: item.price,
+             image: new Image({
+                 url: item.img,
+                 alt: "pizza's",
+             }),
              buttons: new Button({
                  title: 'Order this pizza',
                  url: '/ordered',
