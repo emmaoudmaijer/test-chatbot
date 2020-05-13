@@ -23,6 +23,10 @@ myApp.get('/',(req,res)=>{
   console.log('server-js: '+vari);
   })
 
+  myApp.get('/ordered',(req,res)=>{
+    res.sendFile(__dirname + '/' + "orderpizza.html");//here you are passing the array and the renderer will do the job
+    })
+
   myApp.get('/styles/main.css', function(req, res) {
     res.sendFile(__dirname + "/styles/" + "main.css");
   });
@@ -88,7 +92,7 @@ app.intent('list', (conv) => {
             }),
             buttons: new Button({
                 title: 'Order',
-                url: 'orderpizza.html',
+                url: '/ordered',
               }),
          }));
     })} else {
