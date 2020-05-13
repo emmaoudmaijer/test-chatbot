@@ -102,8 +102,7 @@ app.intent('list', (conv) => {
         newResults.forEach(function(item,index){
           conv.ask(new BasicCard({
              title: item.pizzalist,
-             text: item.description,
-            price: item.price,
+             text: item.price,
              image: new Image({
                  url: item.img,
                  alt: "pizza's",
