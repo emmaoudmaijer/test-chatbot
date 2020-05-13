@@ -80,9 +80,9 @@ app.intent('Default Welcome Intent', (conv) => {
 app.intent('list', (conv) => {
     console.log('intent '+ vari)
     if (vari == 1 ) {
-    conv.ask("Here is a list with all all the pizza's we have available:");
-    newResults.forEach(function(item,index){
-    conv.ask(new BasicCard({
+      conv.ask("Here is a list with all all the pizza's we have available:");
+      newResults.forEach(function(item,index){
+         conv.ask(new BasicCard({
             title: item.pizzalist,
             text: item.description,
             price: item.price,
@@ -95,24 +95,29 @@ app.intent('list', (conv) => {
                 url: '/ordered',
               }),
          }));
-    })} else {
+      })
+    } else {
         conv.ask("We have different pizza's on our menu like: Margaritha, Diavola, Funghi, Napoletana, Salami and many more!");
         conv.ask("Let me know if you see one who you like and would like to order");
-        // conv.ask( new button({
-        // title: 'Order a pizza'
-        // }))
-        // newResults.forEach(function(item2,index){
-        //   conv.ask(new BasicCard({
-        //           title: item2.pizzalist,
-        //           text: item2.description,
-        //           buttons: new Button({
-        //               title: 'Order',
-        //               url: '#',
-        //             }),
-        //        }));
-        //       })
-            }})
-       
+        newResults.forEach(function(item,index){
+          conv.ask(new BasicCard({
+             title: item.pizzalist,
+             text: item.description,
+             price: item.price,
+             image: new Image({
+                 url: item.img,
+                 alt: "pizza's",
+             }),
+             buttons: new Button({
+                 title: 'Order this pizza',
+                 url: '/ordered',
+               }),
+          }));
+       })
+
+      }
+
+    });  
 
 // Handle the Dialogflow follow-up intents
 app.intent(['list - custom', 'list - custom'], (conv, item) => {
