@@ -94,9 +94,9 @@ app.intent('list', (conv) => {
     })} else {
         conv.ask("We have different pizza's on our menu like: Margaritha, Diavola, Funghi, Napoletana, Salami and many more!");
         conv.ask("Let me know if you see one who you like and would like to order");
-        conv.ask( new button({
-        title: 'Order a pizza'
-        }))
+        // conv.ask( new button({
+        // title: 'Order a pizza'
+        // }))
         // newResults.forEach(function(item2,index){
         //   conv.ask(new BasicCard({
         //           title: item2.pizzalist,
