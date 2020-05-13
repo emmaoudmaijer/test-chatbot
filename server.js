@@ -74,7 +74,7 @@ app.intent('Default Welcome Intent', (conv) => {
 })
 
 app.intent('list', (conv) => {
-    console.log('intent'+ vari)
+    console.log('intent '+ vari)
     if (vari == 1 ) {
     conv.ask("Here is a list with all all the pizza's we have available:");
     newResults.forEach(function(item,index){
@@ -92,18 +92,21 @@ app.intent('list', (conv) => {
               }),
          }));
     })} else {
-        conv.ask("We have different pizza's on our menu!");
+        conv.ask("We have different pizza's on our menu like: Margaritha, Diavola, Funghi, Napoletana, Salami and many more!");
         conv.ask("Let me know if you see one who you like and would like to order");
-        newResults.forEach(function(item2,index){
-          conv.ask(new BasicCard({
-                  title: item2.pizzalist,
-                  text: item2.description,
-                  buttons: new Button({
-                      title: 'Order',
-                      url: '#',
-                    }),
-               }));
-              })
+        conv.ask( new button({
+        title: 'Order a pizza'
+        }))
+        // newResults.forEach(function(item2,index){
+        //   conv.ask(new BasicCard({
+        //           title: item2.pizzalist,
+        //           text: item2.description,
+        //           buttons: new Button({
+        //               title: 'Order',
+        //               url: '#',
+        //             }),
+        //        }));
+        //       })
             }})
        
 
