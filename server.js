@@ -120,7 +120,7 @@ app.intent('list', (conv) => {
 
 // Handle the Dialogflow follow-up intents
 app.intent(['list - custom', 'list - custom'], (conv,) => {
-  conv.ask('Great! you ordered a pizza:' + pizzalist);
+  //conv.ask('Great! you ordered a pizza:' + pizzalist);
   // If the user is using a screened device, display the carousel
   //if (conv.screen) return conv.ask(fakeColorCarousel());
  });

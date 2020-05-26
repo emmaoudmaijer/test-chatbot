@@ -17,7 +17,7 @@
 
 	body, input, select, textarea {
 		color: #646464;
-		font-family: "Lato", Helvetica, sans-serif;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -36,7 +36,7 @@
 
 		a:hover {
 			text-decoration: none;
-			color: #e0555a !important;
+			color: #da0000 !important;
 			border-bottom-color: transparent;
 		}
 
@@ -57,13 +57,13 @@
 		color: #545454;
 		font-weight: 700;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 1em 1em;
 		letter-spacing: -0.01em;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
 			text-decoration: none;
+			font-family: WTGothic-Semi-Bold;
 		}
 
 	h2 {
@@ -75,22 +75,9 @@
 		font-size: 1.25em;
 		line-height: 1.5em;
 	}
-
-	h4 {
-		font-size: 1.1em;
-		line-height: 1.5em;
+	.titel {
+		color: white;
 	}
-
-	h5 {
-		font-size: 0.9em;
-		line-height: 1.5em;
-	}
-
-	h6 {
-		font-size: 0.7em;
-		line-height: 1.5em;
-	}
-
 	sub {
 		font-size: 0.8em;
 		position: relative;
@@ -163,7 +150,7 @@
 	}
 
 	header p {
-		color: #949494;
+		color: white;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -188,6 +175,12 @@
 		line-height: 1.5em;
 	}
 
+	header .headerorderbutton {
+		text-align: center;
+		margin-left: 1em;
+		border-radius: 4.8px ;
+		color: white !important;
+	}
 	header.major {
 		text-align: center;
 	}
@@ -201,7 +194,7 @@
 		}
 
 /* Form */
-
+/* 
 	form {
 		margin: 0 0 2em 0;
 	}
@@ -396,7 +389,7 @@
 	.formerize-placeholder {
 		color: #949494 !important;
 		opacity: 1.0;
-	}
+	} */
 
 /* Box */
 
@@ -406,6 +399,7 @@
 		margin-bottom: 2em;
 		padding: 2em;
 		text-align: center;
+		background-image: url('../images/pizza.jpg');
 	}
 
 		.box > :last-child,
@@ -424,6 +418,7 @@
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
+			background-image: url('../images/pizza.jpg');
 		}
 
 			.box.post .image:first-child {
@@ -440,7 +435,7 @@
 					align-self: center;
 				}
 
-/* Icon */
+/* Icon
 
 	.icon {
 		text-decoration: none;
@@ -463,16 +458,16 @@
 
 /* Image */
 
-	.image {
+	/* .image {
 		border-radius: 0.5em;
 		border: 0;
 		display: inline-block;
-		/* position: relative; */
+		/* position: relative; *
 		margin: auto;
 	}
 
 		.image img {
-			/* position: relative; */
+		 position: relative; 
 			align-self: center;
 			border-radius: 0.5em;
 			display: block;
@@ -481,7 +476,7 @@
 		}
 
 		.image.left {
-			/* float: left; */
+			 float: left; 
 			padding: 0 1.5em 1em 0;
 			top: 0.25em;
 		}
@@ -509,7 +504,7 @@
 			.image.fit img {
 				display: block;
 				width: 20%;
-			}
+			} */
 
 /* List */
 
@@ -682,7 +677,7 @@
 	}
 
 /* Table */
-
+/* 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -747,10 +742,10 @@
 
 			table.alt tfoot {
 				border-top: 0;
-			}
+			} */
 
 /* Button */
-
+/* 
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -874,7 +869,7 @@
 			color: #fff !important;
 			cursor: default;
 			opacity: 0.25;
-		}
+		} */
 
 /* Feature */
 
@@ -915,7 +910,7 @@
 
 /* Slider */
 
-	.slider {
+	/* .slider {
 		position: relative;
 	}
 
@@ -984,7 +979,7 @@
 			.slider .nav-previous:before {
 				content: '\f104';
 				left: -0.05em;
-			}
+			} */
 
 /* Wrapper */
 
@@ -993,7 +988,7 @@
 	}
 
 		.wrapper.style1 {
-			background: #f2f2f2;
+			background: white;
 		}
 
 			.wrapper.style1 .box {
@@ -1228,7 +1223,7 @@
 	#banner {
 		background-attachment: scroll,						fixed;
 		background-color: black;
-		background-image: url("https://smakelijk.nl/wp-content/uploads/2018/08/pazzi-breda-4.jpg");
+		background-image: url("https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80");
 		background-position: top left,					center center;
 		background-repeat: no-repeat,						no-repeat;
 		background-size: cover;
@@ -1268,9 +1263,14 @@
 			z-index: 2;
 		}
 
-		#banner .button {
-			border-color: BLACK !important;
-			color: black !important;
+		#banner .headerorderbutton {
+			padding: 1em 2em 1em 2em;
+			width: 178.4px;
+			height: 53.6px;
+			background: linear-gradient(-135deg, rgb(194, 0, 0) 0%, rgb(236, 151, 29) 100%);
+			border-radius: 4.8px;
+			color: white !important;
+	
 		}
 
 			#banner .button:hover {
@@ -1286,11 +1286,13 @@
 			line-height: 1.25em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
+			color: white;
 		}
 
 		#banner p {
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
+			color: white;
 		}
 
 	body.is-loading #banner:after {
@@ -1350,7 +1352,7 @@
 		}
 
 /* Footer */
-
+/* 
 	#footer {
 		color: #949494;
 		padding: 4em 0;
@@ -1368,3 +1370,54 @@
 		#footer .copyright {
 			font-size: 0.8em;
         }
+ */
+
+		table {
+			padding-right: 10em;
+		}
+		.title {
+			border-bottom: 1px solid #da0000
+		}
+		.price {
+			padding-left: 5em;
+			border-bottom: 1px solid #da0000;
+		}
+		tr {
+			border-bottom: 1px solid #da0000;
+		}
+		.headerorderbutton {
+			width: 178.4px;
+			height: 53.6px;
+			background: linear-gradient(-135deg, rgb(194, 0, 0) 0%, rgb(236, 151, 29) 100%);
+			border-radius: 4.8px;
+			color: white !important;
+		}
+
+		.wpb_wrapper {
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+		}
+
+	.imagebanner {
+		background-image: url(https://www.gooischenieuwe.nl/wp-content/uploads/2016/10/Large-pizza1-960x464.jpg);
+		width: 100%;
+		height: 400px;;
+	}
+
+	section {
+		padding:2em;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+	article {
+		padding: 2em;
+	}
+	.footerpicture {
+		margin-left: -5em;
+		background-size: cover;
+		width: 200px;
+		height: 200px;
+		background-image: url('https://images.unsplash.com/photo-1563405614298-56f55a71e7ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+	}
