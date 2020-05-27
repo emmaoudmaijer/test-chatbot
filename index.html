@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="scripts/index.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164794708-1"></script>
 <script>
@@ -35,7 +36,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                     <a href="#">Menu</a>
                 </li>
                 <li><a href="#">The pizzaria</a></li>
-                <button class="headerorderbutton">Order now</button>
+                <button class="headerorderbutton" onclick="openChat()">Order now</button>
             </ul>
         </nav>
     </header>
@@ -46,16 +47,13 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
             <h2 class="titel">Order your pizza online</h2>
             <p>Best pizza's in town!</p>
             <ul class="actions">
-                <li><a href="#" class="headerorderbutton">Order now</a></li>
+                <li><a href="#" class="headerorderbutton" onclick="openChat()">Order now</a></li>
             </ul>
 		</div>
     </section>
-
-    <h2 class="menupizza">Menu</h2>
+    <div class="splash">
+    <h2 class="menupizza">Menu</h2></div>
 <!-- ONE -->
-
-            
-
             <div class="w-tabs-section-content" style="display: block;"><div class="w-tabs-section-content-h i-cf"><div class="wpb_text_column "><div class="wpb_wrapper">
                 <table>
                 <tbody>
@@ -108,6 +106,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                     </tbody>
                     </table>
                 </div> </div> </div></div>
+                <input type="button" value="HELP" id="button" disabled="true" onclick="openChat()">
 <br><br>
                 <div class="imagebanner">
                     <!-- background image -->
@@ -120,7 +119,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                     </article>
                     <article class="text2">               
                         <p>Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.</p>
-                        <button class="headerorderbutton">Order now</button>
+                        <button class="headerorderbutton" onclick="openChat()">Order now</button>
                     </article>
                 </section>
             </div>
@@ -135,12 +134,14 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                 <p>+31 6 12345678</p>
                 <p>Leeuwenveldseweg 3A, Weesp</p>
                 <p>Nederland</p>
-                <button class="headerorderbutton">Order now</button>
+                <button class="headerorderbutton" onclick="openChat()">Order now</button>
             </article>
         </section>
     </footer>
-<script type="text/javascript" src="scripts/index.js"></script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
+    function openChat() {
+        Kommunicate.displayKommunicateWidget(true); //This will show the widget
+    }
     /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     (function(d, m){
       var kommunicateSettings = {"appId":"edd9cecd70088731639daf42427a4723","popupWidget":true,"automaticChatOpenOnNavigation":true};
@@ -149,6 +150,6 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
       window.kommunicate = m; m._globals = kommunicateSettings;
     })(document, window.kommunicate || {});
-</script>
+</script> -->
 </body>
 </html>

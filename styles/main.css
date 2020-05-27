@@ -795,7 +795,7 @@
 
 /* CTA */
 
-	#cta {
+	/* #cta {
 		padding: 4em 0;
 		text-align: center;
 		vertical-align: middle;
@@ -810,7 +810,7 @@
 		#cta .actions {
 			display: inline-block;
 			margin: 0;
-		}
+		} */
 
 		table {
 			padding-right: 10em;
@@ -837,6 +837,7 @@
 			display: flex;
 			flex-wrap: nowrap;
 			justify-content: center;
+			padding-bottom: 1em !important;
 		}
 
 	.imagebanner {
@@ -846,7 +847,7 @@
 	}
 
 	section {
-		padding:2em;
+		/* padding:0em 2em 2em 2em; */
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
@@ -882,6 +883,18 @@
 	}
 
 	.menupizza {
-		background-image: url("/images/Coal-1.png");
 		color:white;
+		/* height: 4em;  */
+		padding-top: 0.2em;
+		padding-right: 2em;
+		font-size: 50px;
+		z-index: 10;
+	}
+	.splash {
+		background-image: url("https://raw.githubusercontent.com/emmaoudmaijer/test-chatbot/555154bec71cb97391288e3a2f5eb5b968dd8c45/images/Coal-1.svg");
+		background-repeat: no-repeat ;
+		width: 23em;
+		text-align: center;
+		z-index: 10;
+		padding:0.8em;
 	}
