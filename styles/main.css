@@ -793,27 +793,9 @@
 			margin-bottom: 0;
 		}
 
-/* CTA */
-
-	/* #cta {
-		padding: 4em 0;
-		text-align: center;
-		vertical-align: middle;
-	}
-
-		#cta h2 {
-			display: inline-block;
-			margin: 0 1em 0 0;
-			vertical-align: middle;
-		}
-
-		#cta .actions {
-			display: inline-block;
-			margin: 0;
-		} */
-
 		table {
 			padding-right: 10em;
+			padding-top: 4em;
 		}
 		.title {
 			border-bottom: 1px solid #da0000
@@ -854,6 +836,7 @@
 	}
 	.text2{
 		padding-right: 10em;
+		width: 150em;
 	}
 	.footerpicture {
 		margin-left: -10em !important;
@@ -880,6 +863,7 @@
 	}
 	footer {
 		padding-top: 2em;
+		background-color: #f9f9f9;
 	}
 
 	.menupizza {
@@ -895,6 +879,42 @@
 		background-repeat: no-repeat ;
 		width: 23em;
 		text-align: center;
+		z-index: 1; /* integer */
+		position: absolute;
+		padding:0.8em;
+		padding-bottom: 3em;
+		margin-top: -3em;
+	}
+
+	.splash2 {
+		background-image: url("https://raw.githubusercontent.com/emmaoudmaijer/test-chatbot/6e5510c0f0ffc8200f9edfcddc7b8ed32a0af98d/images/Coal-2.svg");
+		background-repeat: no-repeat ;
+		width: 23em;
+		text-align: center;
 		z-index: 10;
 		padding:0.8em;
+		margin: auto;
+		margin-top: -3em;
+		padding-bottom: 2.5em;
+	}
+
+	.splash2 h3 {
+		color: white;
+		font-size: 47px;
+		text-align: center;
+	}
+
+	.splash3 {
+		background-image: url("https://raw.githubusercontent.com/emmaoudmaijer/test-chatbot/6e5510c0f0ffc8200f9edfcddc7b8ed32a0af98d/images/Coal-3.svg");
+		background-repeat: no-repeat ;
+		width: 23em;
+		text-align: center;
+		z-index: 10;
+		padding:0.8em;
+		padding-bottom: 0.5em;
+	}
+	.splash3  h3{
+		color: white;
+		font-size: 47px;
+		margin-right: 3em;;
 	}
