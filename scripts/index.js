@@ -4,9 +4,9 @@
     (function(d, m){
       var kommunicateSettings =  {"appId":"edd9cecd70088731639daf42427a4723","popupWidget":true,"automaticChatOpenOnNavigation":true, "onInit": function()
       {
-          Kommunicate.displayKommunicateWidget(false);
+        //   Kommunicate.displayKommunicateWidget(false);
           document.getElementById("button").disabled=false;
-          var css = "<.km-custom-widget-background-color:{background-image}>";        // Replace <YOUR_CSS_CODE_HERE> with the CSS you want to override.
+          var css = "<.km-custom-widget-background-color:{background-image:url('https://raw.githubusercontent.com/emmaoudmaijer/test-chatbot/master/images/logo.jpg)}>";        // Replace <YOUR_CSS_CODE_HERE> with the CSS you want to override.
           Kommunicate.customizeWidgetCss(css);
       }
     };

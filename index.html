@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="stylesheet" href="styles/fonts/WTGothic-Medium.otf">
     <script type="text/javascript" src="scripts/index.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164794708-1"></script>
@@ -33,9 +34,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         <nav id="nav">
             <ul>
                 <li>
-                    <a href="#">Menu</a>
+                    <a href="#menu">Menu</a>
                 </li>
-                <li><a href="#">The pizzaria</a></li>
+                <li><a href="#about">The pizzaria</a></li>
                 <button class="headerorderbutton" onclick="openChat()">Order now</button>
             </ul>
         </nav>
@@ -52,33 +53,33 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 		</div>
     </section>
     <div class="splash">
-    <h2 class="menupizza">Menu</h2></div>
-<!-- ONE -->
-            <div class="w-tabs-section-content" style="display: block;"><div class="w-tabs-section-content-h i-cf"><div class="wpb_text_column "><div class="wpb_wrapper">
-                <table>
+    <h2 class="menupizza" id="menu">Menu</h2></div>
+<!-- ONE --><div class="space1">
+            <div class="wpb_wrapper">
+                <table style="border-collapse: collapse;">
                 <tbody>
-                <tr>
+                <tr class="line">
                 <td class="title">Margherita</td>
                 <td class="price">12</td>
                 </tr>
-                <tr>
+                <tr>  
                 <td class="description">Tomato and cheese</td>
                 </tr>
-                <tr>
+                <tr class="line">
                 <td class="title">Salame</td>
                 <td class="price">13</td>
                 </tr>
                 <tr>
                     <td class="description">Tomato, cheese and salame</td>
                     </tr>
-                <tr>
+                <tr class="line">
                 <td class="title">Funghi</td>
                 <td class="price">13</td>
                 </tr>
                 <tr>
                     <td class="description">Tomato, cheese and mushrooms</td>
                 </tr>
-                <tr>
+                <tr class="line">
                 <td class="title">Pesto<img width="20px" height="20px" src="https://www.naughty.uk.com/assets/images/products/maxxx/vegan-logo.png"></td>
                 <td class="price">13</td>
                 </tr>
@@ -87,16 +88,17 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                 </tr>
                 </tbody>
                 </table>
-                <table>
+                <div class="space"></div>
+                <table style="border-collapse: collapse;">
                     <tbody>
-                    <tr>
+                    <tr class="line">
                     <td class="title">Diavola</td>
                     <td class="price">13.50</td>
                     </tr>
                     <tr>
                         <td class="description">Tomato, cheese and spicy salame</td>
                     </tr>
-                    <tr>
+                    <tr class="line">
                     <td class="title">Olives</td>
                     <td class="price">13.50</td>
                     </tr>
@@ -106,13 +108,13 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                     <tr><td><img width="200px" height="150px" src="https://www.ahealthylife.nl/wp-content/uploads/2018/09/voedingswaarde-basilicum.jpg" alt="basilicum"></td></tr>
                     </tbody>
                     </table>
-                 </div>
-                </div></div> </div>
+                 </div></div>
+                
 <br><br>
                 <div class="imagebanner">
                     <!-- background image -->
                 </div>
-            <div class="row">
+            <div id="about" class="row">
                 <div class="splash2">
                 <h3>The pizzaria</h3>
             </div>
