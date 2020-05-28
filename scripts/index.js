@@ -1,16 +1,25 @@
 
-    function openChat() {
-        Kommunicate.displayKommunicateWidget(true); //This will show the widget
-    }
+   
     /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     (function(d, m){
-      var kommunicateSettings = {"appId":"edd9cecd70088731639daf42427a4723","popupWidget":true,"automaticChatOpenOnNavigation":true};
+      var kommunicateSettings =  {"appId":"edd9cecd70088731639daf42427a4723","popupWidget":true,"automaticChatOpenOnNavigation":true, "onInit": function()
+      {
+          Kommunicate.displayKommunicateWidget(false);
+          document.getElementById("button").disabled=false;
+          var css = "<.km-custom-widget-background-color:{background-image}>";        // Replace <YOUR_CSS_CODE_HERE> with the CSS you want to override.
+          Kommunicate.customizeWidgetCss(css);
+      }
+    };
       var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
       s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
       var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
       window.kommunicate = m; m._globals = kommunicateSettings;
     })(document, window.kommunicate || {});
 
+    function openChat() {
+        Kommunicate.displayKommunicateWidget(true); //This will show the widget
+        Kommunicate.launchConversation();
+}
 //let experimentId = "-e8f2ocGS8O0G2MJU-kzYg";
 function getQueryVariable(variable){
     //get variables from the url
