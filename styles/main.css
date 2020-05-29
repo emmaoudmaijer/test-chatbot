@@ -624,8 +624,11 @@
 		}
 
 	.imagebanner {
-		background-image: url(https://www.gooischenieuwe.nl/wp-content/uploads/2016/10/Large-pizza1-960x464.jpg);
+		/* background-image: url(https://www.gooischenieuwe.nl/wp-content/uploads/2016/10/Large-pizza1-960x464.jpg); */
+		background-image: url(https://images.unsplash.com/photo-1534963063257-6b65b54e438b?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
 		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
 		background-position: center;
 		height: 400px;;
 	}
