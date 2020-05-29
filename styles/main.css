@@ -1,12 +1,36 @@
 
-	@font-face {
-		font-family: 'wtGothic';
-		src:  url("https://insights.wundermanthompsoncommerce.com/hubfs/NL/2020/WTGothic-Variable.ttf") format(‘truetype’);
-		}
+@font-face {
+    font-family: 'WT Gothic';
+    src: url('fonts/WTGothic-Medium.woff2') format('woff2'),
+        url('fonts/WTGothic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WT Gothic Semi';
+    src: url('fonts/WTGothic-Semi-Bold.woff2') format('woff2'),
+        url('fonts/WTGothic-Semi-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WT Gothic italic';
+    src: url('fonts/WTGothic-BoldItalic.woff2') format('woff2'),
+        url('fonts/WTGothic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'WT Gothic Light';
+    src: url('fonts/WTGothic-Light.woff2') format('woff2'),
+        url('fonts/WTGothic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
 	body {
 		background: #fff;
-		font-family: 'WTGothic-light';
+		font-family: 'WT Gothic';
 	}
 
 		body.is-loading * {
@@ -23,10 +47,10 @@
 		}
 
 	body, input, select, textarea {
-		color: #646464;
-		font-family: Arial;
-		font-size: 15pt;
-		font-weight: 300;
+		color: black;
+		font-family: 'WT Gothic';
+		font-size: 14pt;
+		font-weight: 200;
 		line-height: 1.75em;
 	}
 
@@ -67,20 +91,24 @@
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			text-decoration: none;
-			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			font-family: 'WT Gothic Semi'
 		}
 
 	h2 {
 		font-size: 1.75em;
 		line-height: 1.5em;
+		/* font-family: 'WT Gothic italic'; */
 	}
 
 	h3 {
 		font-size: 1.25em;
 		line-height: 1.5em;
+		/* font-family: 'WT Gothic italic'; */
+		font-style: italic;
 	}
 	.titel {
 		color: white;
+		font-weight: bold;
 	}
 	
 
@@ -132,7 +160,10 @@
 		text-align: center;
 		margin-left: 1em;
 		border-radius: 4.8px ;
+		font-weight: 500;
+		/* font-family: 'WT Gothic Semi' !important; */
 		color: white !important;
+		font-size: 20px;
 	}
 	header.major {
 		text-align: center;
@@ -479,7 +510,8 @@
 		background-attachment: scroll,						fixed;
 		background-color: black;
 		background-image: url("https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80");
-		background-position: top left,					center center;
+		/* background-position: top left,					center center; */
+		background-position: center;
 		background-repeat: no-repeat,						no-repeat;
 		background-size: cover;
 		color: darkslategrey;
@@ -557,7 +589,7 @@
 
 		table {
 			padding-right: 10em;
-			padding-top: 4em;
+			padding-top: 6em;
 			padding:3em;
 		}
 		.title {
@@ -573,14 +605,14 @@
 			font-size: 27px !important;
 			/* border-bottom: 1px solid #da0000; */
 		}
-		/* tr {
-			border-bottom: 1px solid #da0000;
-		} */
+	
 		.headerorderbutton {
 			width: 178.4px;
 			height: 53.6px;
 			background: linear-gradient(-135deg, rgb(194, 0, 0) 0%, rgb(236, 151, 29) 100%);
 			border-radius: 4.8px;
+			font-weight: bold;
+			font-size: 20px;
 			color: white !important;
 		}
 
@@ -594,6 +626,7 @@
 	.imagebanner {
 		background-image: url(https://www.gooischenieuwe.nl/wp-content/uploads/2016/10/Large-pizza1-960x464.jpg);
 		width: 100%;
+		background-position: center;
 		height: 400px;;
 	}
 
@@ -618,31 +651,28 @@
 	.description {
 		color: rgb(0, 0, 0);
 		font-size: 16px;
-		/* font-family: WTGothic-Light;  */
-		font-family: Arial ;
-		/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+		font-family: 'WT Gothic light'; 
 		font-weight: 100;
+		padding-bottom: 1em;
 	}
 
 	.title, .price {
 		color: rgb(0, 0, 0);
 		font-size: 21px;
-		font-family: Arial;
-		/* font-family: WTGothic-Medium; */
-		/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+		font-family: 'WT Gothic Medium'; 
 		font-weight: 500;
 	}
 	footer {
 		padding-top: 2em;
 		background-color: #f9f9f9;
+		width: 100%;
 	}
 
 	.menupizza {
 		color:white;
-		/* height: 4em;  */
-		padding-top: 0.2em;
+		font-style: italic;
 		padding-right: 2em;
-		font-size: 50px;
+		font-size: 60px;
 		z-index: 10;
 	}
 	.splash {
@@ -691,9 +721,35 @@
 	}
 
 	.space {
-
-		width: 4em;
+		width: 6em;
 	}
 	.space1 {
-		padding-top:4em;
+		padding-top:6em;
+	}
+
+	@media only screen and (max-width: 53em) {
+		section {
+			display: block;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.space {
+			width: 1em;
+		}
+		.text2{
+			width: 15em;
+			align-self: center;
+			margin-left:5em;
+		}
+		.row {
+			padding-bottom: 2em;
+		}
+
+		footer article {
+			margin-left: 20em;
+			padding-left: 10em;
+		}
+		.wpb_wrapper {
+			display: block;
+		}
 	}

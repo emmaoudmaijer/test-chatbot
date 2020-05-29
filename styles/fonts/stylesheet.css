@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'WT Gothic';
+    src: url('WTGothic-RegularItalic.woff2') format('woff2'),
+        url('WTGothic-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'WT Gothic';
+    src: url('WTGothic-Medium.woff2') format('woff2'),
+        url('WTGothic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WT Gothic';
+    src: url('WTGothic-Regular.woff2') format('woff2'),
+        url('WTGothic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WT Gothic';
+    src: url('WTGothic-LightItalic.woff2') format('woff2'),
+        url('WTGothic-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'WT Gothic';
+    src: url('WTGothic-Light.woff2') format('woff2'),
+        url('WTGothic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WT Gothic italic';
+    src: url('WTGothic-BoldItalic.woff2') format('woff2'),
+        url('WTGothic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'WT Gothic Semi';
+    src: url('WTGothic-Semi-BoldItalic.woff2') format('woff2'),
+        url('WTGothic-Semi-BoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'WT Gothic';
+    src: url('WTGothic-MediumItalic.woff2') format('woff2'),
+        url('WTGothic-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'WT Gothic Semi';
+    src: url('WTGothic-Semi-Bold.woff2') format('woff2'),
+        url('WTGothic-Semi-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WT Gothic';
+    src: url('WTGothic-Bold.woff2') format('woff2'),
+        url('WTGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
