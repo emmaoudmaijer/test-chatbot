@@ -164,6 +164,7 @@
 		/* font-family: 'WT Gothic Semi' !important; */
 		color: white !important;
 		font-size: 20px;
+		border: 0;
 	}
 	header.major {
 		text-align: center;
@@ -510,7 +511,7 @@
 	#banner {
 		background-attachment: scroll,						fixed;
 		background-color: black;
-		background-image: url("https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80");
+		background-image: url("https://raw.githubusercontent.com/emmaoudmaijer/test-chatbot/master/images/nik-owens-40OJLYVWeeM-unsplash.jpg");
 		/* background-position: top left,					center center; */
 		background-position: center;
 		background-repeat: no-repeat,						no-repeat;
@@ -558,6 +559,7 @@
 			background: linear-gradient(-135deg, rgb(194, 0, 0) 0%, rgb(236, 151, 29) 100%);
 			border-radius: 4.8px;
 			color: white !important;
+			border: 0;
 	
 		}
 
@@ -615,6 +617,7 @@
 			font-weight: bold;
 			font-size: 20px;
 			color: white !important;
+			border: 0;
 		}
 
 		.wpb_wrapper {
@@ -626,7 +629,7 @@
 
 	.imagebanner {
 		/* background-image: url(https://www.gooischenieuwe.nl/wp-content/uploads/2016/10/Large-pizza1-960x464.jpg); */
-		background-image: url(https://images.unsplash.com/photo-1534963063257-6b65b54e438b?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+		background-image: url("https://raw.githubusercontent.com/emmaoudmaijer/test-chatbot/master/images/luann-hunt-tv8e9oQx-H4-unsplash.jpg");
 		width: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -667,7 +670,9 @@
 		font-weight: 500;
 	}
 	footer {
-		padding-top: 2em;
+		margin-top: 3em;
+		padding-top: 4em;
+		padding-bottom: 4em;
 		background-color: #f9f9f9;
 		width: 100%;
 	}
