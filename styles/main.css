@@ -751,6 +751,15 @@
 		.space {
 			width: 1em;
 		}
+		.splash2{
+			width: 23em;
+			margin-right: 4em;
+			padding-right: 1em;
+		}
+		body {
+			overflow-x: hidden;
+			
+		}
 		 article p {
 			display: inline-block;
 			width: 100%;
