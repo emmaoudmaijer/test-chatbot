@@ -730,3 +730,9 @@ body.landing #skel-layers-wrapper {
 					  transform: scale(1); } }
 		  
 		  /*# sourceMappingURL=style.css.map */
+
+		  @media only screen and (max-width: 53em) {
+			header  .headerorderbutton {
+				display: none;
+			}
+		}
