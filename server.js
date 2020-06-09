@@ -26,10 +26,21 @@ myApp.get('/',(req,res)=>{
   myApp.get('/ordered',(req,res)=>{
     res.sendFile(__dirname + '/' + "orderpizza.html");//here you are passing the array and the renderer will do the job
     })
+    myApp.get('/basket',(req,res)=>{
+      res.sendFile(__dirname + '/' + "basket.html");//here you are passing the array and the renderer will do the job
+      })
+    myApp.get('/detail',(req,res)=>{
+      res.sendFile(__dirname + '/' + "detailpage.html");//here you are passing the array and the renderer will do the job
+      })
 
   myApp.get('/styles/main.css', function(req, res) {
     res.sendFile(__dirname + "/styles/" + "main.css");
   });
+
+  myApp.get('/styles/basket.css', function(req, res) {
+    res.sendFile(__dirname + "/styles/" + "basket.css");
+  });
+
   myApp.get('/images/', function(req, res) {
     res.sendFile(__dirname + "/images/" + "pizza.jpg");
   });

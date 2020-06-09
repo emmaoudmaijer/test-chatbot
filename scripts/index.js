@@ -70,3 +70,10 @@ function reloadPage(){
     }
     ga('send', 'pageview');  
 
+
+    $('.like-btn').on('click', function() {
+      $(this).toggleClass('is-active');
+   });
+ 
+
+ 

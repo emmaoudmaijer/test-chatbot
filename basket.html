@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/basket.css">
+    <script src="scripts/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header" class="alt skel-layers-fixed">
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li><a href="/#about">The pizzaria</a></li>
+                <li ><a href="/basket"><img src="https://www.cigarfields.com/images/white-shopping-cart-md.png"  width="55px" height="55px" ></a></li>
+                <button class="headerorderbutton" onclick="openChat()">Order now</button>              
+            </ul>
+        </nav>
+    </header>
+    <div class="imagebanner">
+        <!-- background image -->
+    </div>
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+       
+        <!-- Product #1 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+       
+          <div class="image">
+            <img src="https://www.parliamoitaliano.nl/wp-content/uploads/Pizza-en-pasta_Pizza_Margherita-e1481054381295-713x330.jpg" width="150" height="90px" alt="" />
+          </div>
+       
+          <div class="description">
+            <span>Margherita</span>
+            <span>Pizza with cheese and tomato</span>
+            <span></span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">$10</div>
+        </div>
+       
+        <!-- Product #2 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+       
+          <div class="image">
+            <img src="https://pitafalesti.files.wordpress.com/2016/01/pita-la-diavola.jpg"  width="150" height="90px" alt=""/>
+          </div>
+       
+          <div class="description">
+            <span>Diavola</span>
+            <span></span>
+            <span>Pizza with tomato, mozzarella, salami, peppers</span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">$13</div>
+        </div>
+       
+        <!-- Product #3 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+       
+          <div class="image">
+            <img src="https://www.slapyodaddybbq.com/wp-content/uploads/BBQChickenPizza-foodgawker.jpg"  width="150" height="90px" alt="" />
+          </div>
+       
+          <div class="description">
+            <span>BBQ chicken</span>
+            <span></span>
+            <span>Pizza with bbq sauce and chicken</span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">$14</div>
+        </div>
+      </div>
+      <div class="buttonbasket"><button class="headerorderbutton">Order</button></div>
+</body>
+</html>
