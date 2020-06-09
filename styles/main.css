@@ -740,7 +740,7 @@
 		header  .headerorderbutton {
 			display: none;
 		}
-		h2 {
+		header h2 {
 			padding:1em;
 		}
 		section {
@@ -753,15 +753,15 @@
 		}
 		 article p {
 			display: inline-block;
-			width: 47%;
+			width: 100%;
 			padding: 1%;
 		 }
 		.text2{
-			/* width: 15em;
+			width: 15em;
 			align-self: center;
-			margin-left:5em; */
+			/* margin-left:5em; */
 			display: inline-block;
-			width: 47%;
+			width: 100%;
 			padding: 1%;
 		}
 		.row {
@@ -770,8 +770,9 @@
 		}
 
 		footer article {
-			margin-left: 20em;
+			/* margin-left: 20em; */
 			padding-left: 10em;
+			text-align: center;
 		}
 		.wpb_wrapper {
 			display: block;
@@ -780,9 +781,14 @@
 	li img {
 		margin-bottom: -1.4em;
 		padding-top: 0.8em;
-		height: 70px;
+		height: 40px;
+		padding:1em;
 	}
 
+		footer {
+			padding:2em;
+		}
+	
 
 	.imagebanner2 {
 		/* background-image: url(https://www.gooischenieuwe.nl/wp-content/uploads/2016/10/Large-pizza1-960x464.jpg); */
