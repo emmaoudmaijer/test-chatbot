@@ -750,9 +750,6 @@
 		header h2 {
 			padding:1em;
 		}
-		footer p {
-			padding:0;
-		}
 		table {
 			width: 100%;
 		}
@@ -786,6 +783,13 @@
 			font-size: 16px;;
 			margin-left: -1em;
 		 }
+		 footer {
+			padding:2em;
+		}
+	
+		 footer p {
+			padding:0;
+		}
 		.text2{
 			width: 15em;
 			align-self: center;
@@ -816,10 +820,6 @@
 		padding:1em;
 	}
 
-		footer {
-			padding:2em;
-		}
-	
 
 	.imagebanner2 {
 		/* background-image: url(https://www.gooischenieuwe.nl/wp-content/uploads/2016/10/Large-pizza1-960x464.jpg); */
