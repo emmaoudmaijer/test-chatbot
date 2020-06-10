@@ -740,6 +740,9 @@
 		header  .headerorderbutton {
 			display: none;
 		}
+		.wpb_wrapper {
+			padding:1em;
+		}
 		header h2 {
 			padding:1em;
 		}
