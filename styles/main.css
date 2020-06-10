@@ -743,6 +743,9 @@
 		header h2 {
 			padding:1em;
 		}
+		footer p {
+			padding:0;
+		}
 		table {
 			width: 100%;
 		}
