@@ -749,6 +749,9 @@
 		table  tr {
 			width: 100%;
 		}
+		.price {
+			float: right;
+		}
 		section {
 			display: block;
 			/* flex-wrap: wrap; */
