@@ -743,6 +743,12 @@
 		header h2 {
 			padding:1em;
 		}
+		table {
+			width: 100%;
+		}
+		table  tr {
+			width: 100%;
+		}
 		section {
 			display: block;
 			/* flex-wrap: wrap; */
