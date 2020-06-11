@@ -32,9 +32,16 @@ myApp.get('/',(req,res)=>{
     myApp.get('/detail',(req,res)=>{
       res.sendFile(__dirname + '/' + "detailpage.html");//here you are passing the array and the renderer will do the job
       })
+      myApp.get('/checkout',(req,res)=>{
+        res.sendFile(__dirname + '/' + "checkout.html");//here you are passing the array and the renderer will do the job
+        })
+  
 
   myApp.get('/styles/main.css', function(req, res) {
     res.sendFile(__dirname + "/styles/" + "main.css");
+  });
+  myApp.get('/styles/checkout.css', function(req, res) {
+    res.sendFile(__dirname + "/styles/" + "checkout.css");
   });
 
   myApp.get('/styles/basket.css', function(req, res) {
