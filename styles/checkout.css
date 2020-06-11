@@ -514,10 +514,44 @@ body.landing #skel-layers-wrapper {
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
   @media (max-width: 800px) {
     .row {
+     padding:0 !important;
       flex-direction: column-reverse;
     }
     .col-25 {
       margin-bottom: 20px;
+    }
+    header .headerorderbutton {
+        display: none;
+    }
+    .splash3 {
+margin: auto;
+    }
+    article p {
+        display: inline-block;
+        width: 90%;
+        padding:1em;
+        font-size: 16px;;
+        margin-left: -1em;
+     }
+    .footerpicture {
+         display: none  !important;
+     }
+    section {
+        display: block;
+        padding-left: 3em;
+        text-align: center;
+    }
+    footer {
+        padding:2em;
+    }
+
+     footer p {
+        padding:0;
+    }
+    footer article {
+        /* margin-left: 20em; */
+        /* padding-left: 10em; */
+        text-align: center;
     }
   }
 
