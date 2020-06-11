@@ -793,7 +793,6 @@
 		.text2{
 			width: 15em;
 			align-self: center;
-			/* margin-left:5em; */
 			display: inline-block;
 			width: 100%;
 			padding: 1em;
@@ -841,12 +840,6 @@
 	}
 
 
-
-
-
-
-
-
 	/* ----------------------------------------BOOTSTRAP DETAILPAGE--------------------------------------------------- */
 
 	img {
@@ -864,7 +857,10 @@
 				flex-direction: column; }
 		@media screen and (max-width: 996px) {
 		  .preview {
-			margin-bottom: 20px; } }
+			margin-bottom: 20px; }
+		.sizes {
+			/* display: flex; */
+		}}
 	  
 	  .preview-pic {
 		-webkit-box-flex: 1;
@@ -1006,4 +1002,3 @@
 		  opacity: 1;
 		  -webkit-transform: scale(1);
 				  transform: scale(1); } }
-	  
