@@ -831,6 +831,17 @@
 		height: 400px;;
 	}
 
+	.imagebanner3 {
+		/* background-image: url(https://www.gooischenieuwe.nl/wp-content/uploads/2016/10/Large-pizza1-960x464.jpg); */
+		background-image: url("https://raw.githubusercontent.com/emmaoudmaijer/test-chatbot/master/images/nik-owens-40OJLYVWeeM-unsplash.jpg");
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 400px;;
+	}
+
+
 
 
 
