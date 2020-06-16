@@ -859,7 +859,7 @@
 		  .preview {
 			margin-bottom: 20px; }
 		.sizes {
-			/* display: flex; */
+			display: flex;
 		}}
 	  
 	  .preview-pic {
