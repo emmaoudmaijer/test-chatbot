@@ -63,7 +63,7 @@ function reloadPage(){
     console.log('tag: '+vari);
     let experimentId = "-e8f2ocGS8O0G2MJU-kzYg";
 
-    ga('create', 'UA-1647947-081', 'auto');
+    ga('create', 'UA-164794708-1', 'auto');
     ga('require', 'GTM-P5JTVF2');
     if (vari == "0" || vari =="1" ){
         ga('set', 'experimentId', experimentId + vari);
