@@ -860,9 +860,12 @@
 			margin-bottom: 20px; }
 		.sizes {
 			display: flex;
+		}
+		.price {
+			margin-left:-10em !important;
 		}}
-	  
-	  .preview-pic {
+		
+		.preview-pic {
 		-webkit-box-flex: 1;
 		-webkit-flex-grow: 1;
 			-ms-flex-positive: 1;
