@@ -1,7 +1,7 @@
 
    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
    (function(d, m){
-     var kommunicateSettings = {"appId":"15469ab8a5b968c9e0e80f5d9b9a2e706","popupWidget":true,"automaticChatOpenOnNavigation":tru, "onInit": function()
+     var kommunicateSettings = {"appId":"15469ab8a5b968c9e0e80f5d9b9a2e706","popupWidget":true,"automaticChatOpenOnNavigation":true, "onInit": function()
      {
       //   Kommunicate.displayKommunicateWidget(false);
         document.getElementById("button").disabled=false;
