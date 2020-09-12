@@ -29,6 +29,6 @@
     "express": "^4.17.1",
     "firebase-functions": "^3.6.1",
     "forever": "^2.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
