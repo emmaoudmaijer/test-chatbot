@@ -20,7 +20,7 @@
   "homepage": "https://github.com/emmaoudmaijer/test-chatbot#readme",
   "dependencies": {
     "actions-on-google": "^2.12.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "dialogflow": "^1.2.0",
     "dialogflow-fulfillment": "^0.6.1",
